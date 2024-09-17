@@ -36,3 +36,20 @@ console.log(myString.at(-1));
 let text = "Apple, Banana, Kiwi";
 let part = text.slice(-12);
 console.log(part);
+
+const who = prompt("Who's there?");
+
+if (who === null || who === "") {
+  alert("Canceled");
+} else if (who === "Admin") {
+  const password = prompt("Enter your password");
+  if (password === null || password === "") {
+    alert("Canceled");
+  } else if (password === "TheMaster") {
+    alert("Welcome");
+  } else {
+    alert("Wrong password");
+  }
+} else {
+  alert("I don't know you!");
+}
