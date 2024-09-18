@@ -36,7 +36,7 @@ console.log(myString.at(-1));
 let text = "Apple, Banana, Kiwi";
 let part = text.slice(-12);
 console.log(part);
-
+/*
 const who = prompt("Who's there?");
 
 if (who === null || who === "") {
@@ -52,4 +52,50 @@ if (who === null || who === "") {
   }
 } else {
   alert("I don't know you!");
+}
+*/
+function favoriteAnimal(animal) {
+  return animal + " is my favorite";
+}
+
+console.log(favoriteAnimal("Goat"));
+
+function add7(num) {
+  return num + 7;
+}
+
+console.log(add7(8));
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+
+console.log(multiply(98, 55));
+
+function capitalize(str) {
+  return str[0].toUpperCase() + str.slice(1);
+}
+
+console.log(capitalize("numerical value"));
+
+function lastLetter(str) {
+  return str.at(-1);
+}
+
+console.log(lastLetter("abcd"));
+
+let answer = parseInt(
+  prompt("Please enter the number you would like to FizzBuzz up to")
+);
+
+for (let i = 1; i <= answer; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("Fizz Buzz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else {
+    console.log(i);
+  }
 }
